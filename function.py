@@ -150,36 +150,72 @@
 # print(s)
 
 
+#There are those which are defined outside any function and which are accessible throughout the program, i.e.,
+#inside and outside of every function. Let's see how to create a global variable.
+
+#Example: Defining and accessing global variables
 
 
+#This function uses global variables
+# def f():
+#     print("Inside Function:", s)
+
+#     # Global scope
+# s = "I love Geeks for geeks"
+# f()
+# print("Outside function:", s)
+
+# def f():
+#     s = "Me too"
+#     print(s)
+# f()
+
+# #Global Scope
+# def f():
+#     s = "I love geeks for geeks"
+# f()
+# print(s)
+
+# a = 1
+# #uses global because there is no local 'a'
+# def f():
+#     print('inside f() : ', a)
+# f()
+
+#FUNCTIONAL ARGUMENTS
+#You can call a function by using the following types of formal arguments -
+
+#Required arguments
+#Keyword arguments
+#Default arguments
+#Variable-length arguments
+
+#Default Arguments
+# A default arguments is a kind of parameter that takes as input a default value if no value is supplied for the argument when the function
+#is called. Default arguments are demonstrated in the following instance.
+
+#CODE
+# Python code to demonstrate the use of default arguments
+# defining a function
+
+# def function(num1, num2 = 40):
+#     print("num1 is: ", num1)
+#     print("num2 is: ", num2)
+# function
+
+# # Calling the function and passing only one arguments
+# print("Passing one Argument")
+# function(10)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# # Now giving two arguments to the function
+# print("Passing two arguments")
+# function(10,30)
 
 
 # #Keyword Arguements
 # The arguemnts in a function called are connected to keywords arguemnts.If we provide keyword arguemnts while calling a function,
 # the user uses the parameter label to identify which parameter value it is
-
-
-
-
-
-
-
 
 #Example
 # def my_function(child3,child2, child1):
@@ -201,4 +237,29 @@
 # #Calling function and passing arguments using keyword
 # print("with using keyword")
 # function(num2 = 50, num1 =30)
+# and will override anything in a string''
+# the last value will override the value in the first one, 
+# print(0 and "5")
 
+
+# use of return
+
+# m = 5
+# def paul():
+# def paul(7)
+#     return 7 
+#     return m  for paul()
+
+# def mike():
+#     print(paul() * m)
+#     print(paul(7) * m)
+
+# mike()
+
+# m = 5
+# n = []
+
+# for i in range(10):
+#     n.append(i * m)
+
+# print(n)
